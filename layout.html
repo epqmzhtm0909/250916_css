@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kimJAVA</title>
+
+    <!-- favicon -->
+    <!-- https://realfavicongenerator.net/ -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/./favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/./favicon.svg" />
+    <link rel="shortcut icon" href="/./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/./apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/./site.webmanifest" />
+
+    <!-- og tag -->
+    <!-- https://ogp.me/ -->
+    <meta property="og:title" content="김자바를 소개합니다" />
+    <meta
+      property="og:description"
+      content="끊임없는 학습과 도전을 즐기는 백엔드 개발자 김자바의 포트폴리오입니다. 더 나은 시스템을 만들기 위한 저의 여정을 확인해 보세요"
+    />
+    <meta property="og:image" content="" />
+
+    <style>
+      /* 폰트 */
+      /* https://noonnu.cc/ */
+      @font-face {
+        font-family: "SfHambakneun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
+          format("woff");
+        font-weight: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "GounBatang";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "GounBatang";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff")
+          format("woff");
+        font-weight: 700;
+        font-display: swap;
+      }
+      body {
+        font-family: "GounBatang";
+      }
+      .title {
+        font-family: "SfHambakneun";
+        color: #003f8f;
+      }
+
+      /* 기본 전체 설정 */
+      * {
+        box-sizing: border-box;
+        /* 모든 box width, height를 우리 지정에 맞게 */
+      }
+
+      body {
+        margin: 0; /* 기본 마진 */
+        background-color: #f47721;
+        color: #ff6600;
+      }
+
+      /*
+        색상 설정
+        - https://www.bairesdev.com/tools/ai-colors
+        - https://2colors.colorion.co/
+        - https://colorhunt.co/
+        - https://mobilepalette.colorion.co/
+      */
+
+      .box {
+        background-color: #003f8f;
+        padding: 24px;
+        border-radius: 12px;
+        /* border-radius: 50%;  */
+        /* 0~50% */
+      }
+
+      /* 레이아웃 : 박스모델, 플렉스 */
+      body {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        /* 위에서 아래 방향으로 쌓아서 처리 */
+      }
+      body > section {
+        /* body에 바로 속한 section */
+        /* 자식 선택 -> 바로 속한 경우 */
+        /* https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints */
+        /* padding: 24px; */
+        padding: 0 24px;
+        max-width: 576px;
+        width: 100%;
+        margin: auto;
+      }
+
+      h2 {
+        margin-top: 0; /* top, left, right, bottom */
+      }
+
+      #intro .title {
+        text-align: center;
+      }
+
+      #intro div {
+        line-height: 1.6;
+        /* 1 : 100% */
+      }
+
+      #tech-stack ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      #tech-stack li {
+        list-style: none;
+        width: 128px;
+        aspect-ratio: 1; /* 가로/세로 */
+        background-color: #ebe2cd;
+        border-radius: 8px;
+        border: 1px transparent solid;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #tech-stack img {
+        width: 80%;
+        padding: 8px;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      #portfoilio .box > div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      #portfoilio .item {
+        background-color: #ebe2cd;
+        width: 100%;
+
+        border-radius: 8px;
+        border: 1px #fff1f1 solid;
+        padding: 0 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="intro">
+      <h1 class="title">
+        반갑습니다!<br />
+        성장하는 백엔드 개발자<br />
+        김자바 입니다
+      </h1>
+      <section class="box">
+        <h2>👨‍💼 Introduce</h2>
+        <div>
+          안녕하세요, 백엔드 개발자 김자바입니다. 생성형 AI 모델을 활용하여 코드
+          생산성을 높이고, <strong>창의적인 문제 해결</strong> 방식을
+          탐구합니다. 복잡한 비즈니스 로직을
+          <strong>자동화하고 지능화된 서비스</strong>를 만드는 과정에서 큰
+          보람을 느낍니다. AI 기술을 통해 스스로 학습하고 발전하는 백엔드
+          시스템을 만들어나가는 개발자가 되겠습니다.
+        </div>
+      </section>
+    </section>
+
+    <!-- flex 기반 레이아웃. svg repo. -->
+    <!-- 기술 스택 (부트캠프) -->
+    <!-- https://www.svgrepo.com/ -->
+    <!-- https://icons8.com/ -->
+    <section id="tech-stack">
+      <section class="box">
+        <!-- https://emojipedia.org/ -->
+        <h2>⚙️ Tech Stack</h2>
+        <ul>
+          <li>
+            <img src="img/java.png" alt="JAVA" />
+          </li>
+          <li>
+            <img src="img/spring.png" alt="SPRING" />
+          </li>
+          <li>
+            <img src="img/mysql.png" alt="MYSQL" />
+          </li>
+          <li>
+            <img src="img/aws.png" alt="AWS" />
+          </li>
+          <li>
+            <img src="img/github.png" alt="GITHUB" />
+          </li>
+        </ul>
+      </section>
+    </section>
+    <!-- 포트폴리오 (3종) -->
+    <section id="portfoilio">
+      <section class="box">
+        <h2>📃 Portfoilio</h2>
+        <div>
+          <div class="item">
+            <h3>농산물 마켓 주문/배송 관리 프로젝트</h3>
+            <p>
+              지역 농산물 직거래 마켓의 주문 및 배송 관리 API 서버를
+              개발했습니다. Spring Boot 기반의 RESTful API를 통해 생산자별 상품
+              등록, 소비자 주문 접수, 배송 추적 기능을 구현하고, 데이터는
+              MySQL로 관리합니다.
+            </p>
+          </div>
+          <div class="item">
+            <h3>스터디 그룹 매칭 및 관리 프로젝트</h3>
+            <p>
+              AI 기반 스터디 그룹 매칭 플랫폼의 백엔드 시스템을 구축했습니다.
+              실시간 채팅으로 학습 내용을 공유하고 진행 상황을 관리하는 기능을
+              구현하고, 안전한 서비스를 위한 인증 및 권한 관리 로직을
+              설계했습니다. 생성형 AI를 활용해 관련 과목의 예상 문제나 토론
+              주제를 자동으로 생성하는 기능을 구현했습니다.
+            </p>
+          </div>
+          <div class="item">
+            <h3>AWS 인프라 구축 프로젝트</h3>
+            <p>
+              트래픽 급증에 유연하게 대응할 수 있는 확장성 높은 인프라를 AWS에
+              구축했습니다. Application Load Balancer와 Auto Scaling Group을
+              사용하여 트래픽 양에 따라 EC2 인스턴스가 자동으로 확장 및
+              축소되도록 구성했습니다. 또한 RDS는 다중 AZ로 구성하여
+              데이터베이스의 가용성을 높였습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
